@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* common style */
+*{margin:0; padding:0; font-size:12px; font-family:Verdana, Geneva, sans-serif,"宋体"; list-style:none;}
+a{text-decoration:none; color:#04309b;}
+a:hover{text-decoration:underline;}
+.txt_align_c{text-align:center;}
+.txt_align_r{text-align:right;}
+.margin_r_10{margin-right:10px;}
+.line-height_24{line-height:24px;}
+
+#wrap{width:800px; margin:40px auto;}
+#header,#mainbody,#footer{width:100%; overflow:hidden;}
+#header h1{background:url(../images/logo.gif) no-repeat; height:43px; width:200px; float:left;}
+
+.box{width: 595px;float:right;margin-top: 5px;}
+.top_radius{background:url(../images/t_radius_595.gif) no-repeat;height: 3px; }
+.content{background: #ebf3ff;border: 1px solid #ebf3ff;border-bottom: none;border-top:none;}/*边框只想加在两边*/
+.content p{line-height: 24px;}
+.btm_radius{background:url(../images/b_radius_595.gif) no-repeat;height: 3px; }
+.txt_r{text-align: right;}
+
+/*!!!!!背景图像实现固定宽度圆角*/
+.topnav{float:right; width:595px; margin-top:5px;}
+.top_radius{width:100%; overflow:hidden; background:url(../images/t_radius_595.gif) no-repeat; height:3px;}
+.btm_radius{width:100%; overflow:hidden; background:url(../images/b_radius_595.gif) no-repeat; height:3px;}
+
+.content{background:#ebf3ff; padding:5px; position:relative;}
+.content p{color:#d0ccda;}
+.content p a{margin:0 5px;}
+
+/*!!!!!背景图像实现宽度、高度自适应圆角*/
+.footer_content{background: #ebf3ff;border: 1px solid #ebf3ff;border-bottom: none;border-top:none;position: relative;}/*加个相对定位*/
+.l_top_radius,.r_top_radius,.l_btm_radius,.r_btm_radius{width:4px; height:3px; position:absolute;}/*不能不设置宽度，绝对定位的元素如果不设定宽度就会自适应*/
+.l_top_radius{background:url(../images/l_top_radius.gif) no-repeat; left:0; top:0;}
+.r_top_radius{background:url(../images/r_top_radius.gif) no-repeat; right:0; top:0;}/*right和top必须写*/
+.l_btm_radius{background:url(../images/l_btm_radius.gif) no-repeat; left:0; bottom:0;}
+.r_btm_radius{background:url(../images/r_btm_radius.gif) no-repeat; right:0; bottom:0;}
+
+#mainbody{margin-top:22px;}
+.left{float:left;}
+
